@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TigerRecon-AI | Tactical HUD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-950 text-emerald-400 p-6 font-mono selection:bg-emerald-500 selection:text-black">
+
+    <div class="max-w-5xl mx-auto border border-emerald-500/30 rounded-lg p-6 bg-black shadow-2xl shadow-emerald-500/10">
+        <header class="flex justify-between items-center border-b border-emerald-500/20 pb-4 mb-6">
+            <h1 class="text-xl font-black tracking-widest text-emerald-400 animate-pulse"><i class="fa-solid fa-terminal mr-2"></i> TIGERRECON-AI // SYSTEM HUD</h1>
+            <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded">CORE STATE: ACTIVE</span>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-1 border border-emerald-500/20 p-4 rounded bg-gray-900/50">
+                <h2 class="text-sm font-bold mb-4 border-b border-emerald-500/10 pb-2 text-white">TARGET INGESTION</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-xs text-gray-400 block mb-1">HOST / IP ADDRESS</label>
+                        <input type="text" placeholder="127.0.0.1" class="w-full bg-black border border-emerald-500/30 rounded px-3 py-2 text-sm text-emerald-300 focus:outline-none focus:border-emerald-400">
+                    </div>
+                    <div>
+                        <label class="text-xs text-gray-400 block mb-1">SCAN INTENSITY</label>
+                        <select class="w-full bg-black border border-emerald-500/30 rounded px-3 py-2 text-sm text-emerald-300 focus:outline-none focus:border-emerald-400">
+                            <option>AGGRESSIVE (DEEP AUDIT)</option>
+                            <option>STEALTH (PASSIVE RECON)</option>
+                        </select>
+                    </div>
+                    <button class="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-2.5 rounded text-sm transition">ENGAGE SCANNER</button>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 border border-emerald-500/20 p-4 rounded bg-black flex flex-col justify-between">
+                <div>
+                    <h2 class="text-sm font-bold mb-3 border-b border-emerald-500/10 pb-2 text-white">LIVE MONITOR CONSOLE</h2>
+                    <div class="text-xs space-y-1 text-emerald-500/80">
+                        <p class="text-gray-500">[SYS_INIT] Loading threat modeling neural vectors...</p>
+                        <p class="text-gray-500">[SYS_INIT] Modules connected to backend service at port 5000.</p>
+                        <p class="text-white"><span class="text-emerald-400">tiger-recon:~$</span> ./neural_core --status</p>
+                        <p class="text-yellow-400">[WARN] Deep network socket listener tracking initialized.</p>
+                        <p class="text-emerald-400">[READY] System integrity secured. Waiting for ingestion parameters.</p>
+                    </div>
+                </div>
+                <div class="border-t border-emerald-500/10 pt-3 mt-4 text-[10px] text-gray-500 flex justify-between">
+                    <span>SECURE NODE // TERMINAL v4.0</span>
+                    <span>TIGER-X PRODUCTION</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
